@@ -31,23 +31,19 @@ html::-webkit-scrollbar{
 html::-webkit-scrollbar-track{
     background:#222;
 }
-
 html::-webkit-scrollbar-thumb{
     background:var(--yellow);
 }
-
 body{
     background: linear-gradient(180deg, #FF9933 0%, #fc9696 33%, #138808 66%, #111 100%);
     background-attachment: fixed;
     overflow-x: hidden;
     padding-left: 35rem;
 }
-
 section{
     min-height: 100vh;
     padding:1rem;
 }
-
 .btn{
     padding:.7rem 3rem;
     background:#333;
@@ -57,16 +53,13 @@ section{
     font-size: 2rem;
     border-radius: 5rem;
 }
-
 .btn i{
     padding:0 .5rem;
     font-size: 1.8rem;
 }
-
 .btn:hover{
     background:var(--yellow);
 }
-
 .heading{
     text-align: center;
     margin:0 6rem;
@@ -75,11 +68,9 @@ section{
     border-bottom: .1rem solid #fff4;
     color:#fff;
 }
-
 .heading span{
     color:var(--yellow);
 }
-
 header {
     position: fixed;
     top: 0;          /* fixed from very top */
@@ -97,7 +88,6 @@ header {
     scrollbar-width: thin;    /* Firefox scrollbar */
     scrollbar-color: #ff9800 #1a1a1a; 
 }
-
 /* Custom scrollbar (for Chrome, Edge, Safari) */
 header::-webkit-scrollbar {
     width: 8px;
@@ -109,7 +99,6 @@ header::-webkit-scrollbar-thumb {
     background: #ff9800;
     border-radius: 4px;
 }
-
 header .user img {
     height: 17rem;
     width: 17rem;
@@ -119,10 +108,6 @@ header .user img {
     margin-bottom: 1rem;
     border: .7rem solid var(--yellow);
 }
-
-
-
-
 header .user .name{
     font-size: 3.5rem;
     color:#fff;
@@ -132,11 +117,9 @@ header .user .name{
     margin-top: 1rem;
     text-align: center;
 }
-
 .contact-links p {
     margin: 0.8rem 0;
 }
-
 .contact-links a {
     font-size: 1.2rem;
     color: #eee;
@@ -146,14 +129,12 @@ header .user .name{
     border-radius: 8px;
     display: inline-block;
 }
-
 /* Hover Effect */
 .contact-links a:hover {
     color: #ff9800;             /* highlight color */
     background: rgba(255, 255, 255, 0.1); 
     transform: scale(1.05);     /* zoom effect */
 }
-
 /* Optional: different colors for each platform */
 .contact-links a[href^="mailto"] { color: #f97a40; }   /* email - red */
 .contact-links a[href*="github"] { color: hwb(210 96% 3%); } 
@@ -161,20 +142,16 @@ header .user .name{
 .contact-links a[href^="tel"] { color: #4caf50; } 
 .contact-links a[href*="netlify"] { color: #43f850; } 
 
-
 header .user .post{
     font-size: 2rem;
     color:#eee;
 }
-
-
 /* Hover effect */
 header .user p:hover {
     color: #ff9800;   /* highlight color */
     transform: scale(1.05);  /* small zoom */
     cursor: pointer;
 }
-
 /* Optional animation when page loads */
 @keyframes fadeInUp {
     0% {
@@ -186,20 +163,16 @@ header .user p:hover {
         transform: translateY(0);
     }
 }
-
 header .user p {
     animation: fadeInUp 0.8s ease-in-out;
 }
-
 header .navbar{
     width:100%;
 }
-
 header .navbar ul{
     list-style: none;
     padding:1rem 3rem;
 }
-
 header .navbar ul li a{
     display: block;
     padding:1rem;
