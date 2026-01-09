@@ -262,18 +262,108 @@ header .navbar ul li a:hover{
     padding:0 15rem;
 }
 
+.home .home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.home .user{
+    margin-bottom: 2rem;
+}
+
+.home .user img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .4rem solid var(--yellow);
+    margin-bottom: 1rem;
+}
+
+.home .user .name{
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 1rem 0 .5rem 0;
+}
+
+.home .user .post{
+    font-size: 1.8rem;
+    color: var(--yellow);
+    margin-bottom: 2rem;
+}
+
 .home h3{
     font-size: 2.5rem;
     color:#fff;
+    margin-top: 2rem;
 }
 
 .home h1{
     font-size:5rem;
     color:#fff;
+    margin: 1rem 0;
 }
 
 .home h1 span{
     color:var(--yellow);
+}
+
+.home .navbar{
+    margin: 2rem 0;
+}
+
+.home .navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.home .navbar ul li{
+    margin: 0 1rem;
+}
+
+.home .navbar ul li a{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+    transition: all .2s linear;
+}
+
+.home .navbar ul li a:hover{
+    background: var(--yellow);
+    color: #333;
+}
+
+.home .contact-links{
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.home .contact-links p{
+    margin: 0 .5rem;
+}
+
+.home .contact-links p a{
+    font-size: 1.6rem;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+    transition: all .2s linear;
+    display: inline-block;
+}
+
+.home .contact-links p a:hover{
+    background: var(--yellow);
+    color: #333;
 }
 
 .home p{
