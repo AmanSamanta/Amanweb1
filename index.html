@@ -10,9 +10,35 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-<body>
+<script>
+function updateAge() {
+    const ageElement = document.getElementById("age");
+
+    if (!ageElement) return;
+
+    const birthDateStr = ageElement.getAttribute("data-birth");
+    const birthDate = new Date(birthDateStr);
+    const today = new Date();
+
+    // calculate years and months
+    let years = today.getFullYear() - birthDate.getFullYear();
+    let months = today.getMonth() - birthDate.getMonth();
+    const dayDiff = today.getDate() - birthDate.getDate();
+
+    if (dayDiff < 0) {
+        months -= 1;
+    }
+
+    if (months < 0) {
+        years -= 1;
+        months += 12;
+    }
+
+    ageElement.textContent = `${years} Years ${months} Months`;
+}
+</script>
+<body onload="updateAge()">
 <!-- header section starts  -->
 <header>
     <!-- mobile menu button -->
@@ -48,7 +74,7 @@
                 <li><a href="#certificate">CERTIFICATE</a></li>
                 <li><a href="#technical-skill">TECHNICAL SKILL</a></li>
                 <li><a href="#project">PROJECT</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <!-- <li><a href="#portfolio">PORTFOLIO</a></li> -->
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
@@ -113,12 +139,12 @@
 <div class="row">
 
     <div class="info">
-        <h3> <span> name : </span> aman samanta </h3>
-        <h3> <span> age : </span> 20 </h3>
+    <h3> <span> name : </span> aman samanta </h3>
+    <h3> <span> age : </span> <span id="age" data-birth="2002-08-16"></span> </h3>
         <h3> <span> qualification : </span> H.S Pass </h3>
         <h3> <span> post : </span> College Student </h3>
         <h3> <span> language : </span> Bengali </h3>
-        <a href="images/aman.jpeg"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
+        <a href="https://drive.google.com/file/d/1tnJoSeYWTY0Sr5sElt-uEmVd_CC3Wrre/view?usp=drive_link"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
     </div>
 
     <div class="counter">
@@ -323,23 +349,9 @@
 
     <div class="box">
         <i class="fas fa-certificate"></i>
-        <span>2023</span>
-        <h3>AWS Cloud Practitioner</h3>
-        <p>Certified in AWS Cloud services including EC2, S3, Lambda, and various cloud architecture patterns.</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-certificate"></i>
         <span>2022</span>
         <h3>Python Programming</h3>
         <p>Advanced Python certification covering data structures, algorithms, and web development frameworks.</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-certificate"></i>
-        <span>2022</span>
-        <h3>Docker & Kubernetes</h3>
-        <p>Container orchestration and deployment certification with hands-on project experience.</p>
     </div>
 
     <div class="box">
@@ -354,6 +366,30 @@
         <span>2021</span>
         <h3>Git & GitHub</h3>
         <p>Version control and collaboration certification with Git workflows and GitHub actions.</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-certificate"></i>
+        <span>2025</span>
+        <h3>Android App Development</h3>
+        <p>Advanced professional certification demonstrating expertise in specialized skills and industry best practices.</p>
+        <a href="https://drive.google.com/file/d/1URW1q5-XYaATPvvP7FKixsWEaOzPFFaz/view?usp=drive_link" class="btn" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-certificate"></i>
+        <span>2025</span>
+        <h3>Advanced Certification</h3>
+        <p>Professional certification demonstrating advanced technical expertise and industry recognition in modern development practices.</p>
+        <a href="https://drive.google.com/file/d/1zGvMypPZ2LKH1-vSOPld19cDpqbAGQHB/view?usp=drive_link" class="btn" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-certificate"></i>
+        <span>2025</span>
+        <h3>Cognify offer letter</h3>
+        <p>Industry recognized letter</p>
+        <a href="https://drive.google.com/file/d/1_8cBtoz3Zu6xeH-UhUtfic-_vXKyzJsL/view?usp=drive_link" class="btn" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
     </div>
 
 </div>
@@ -460,7 +496,7 @@
 
 <!-- portfolio section starts  -->
 
-<section class="portfolio" id="portfolio">
+<!-- <section class="portfolio" id="portfolio">
 
 <h1 class="heading"> my <span>portfolio</span> </h1>
 
@@ -490,7 +526,7 @@
         <img src="images/img6.jpg" alt="">
     </div>
 </div>
-</section>
+</section> -->
 <!-- portfolio section ends -->
 <!-- contact section starts  -->
 <section class="contact" id="contact">
@@ -534,19 +570,6 @@
 <a href="#home" class="top">
     <img src="images/scroll-top-imgage.png" alt="">
 </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- jquery cdn link  -->
