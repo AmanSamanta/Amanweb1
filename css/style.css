@@ -60,6 +60,35 @@ section{
 .btn:hover{
     background:var(--yellow);
 }
+
+/* Audio Toggle Button */
+.audio-toggle {
+    position: fixed;
+    top: 50%;
+    left: 3rem;
+    transform: translateY(-50%);
+    padding: 1rem 2rem;
+    background: #6bf047;
+    color: #f28080;
+    cursor: pointer;
+    font-size: 1.6rem;
+    border-radius: 5rem;
+    z-index: 999;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.audio-toggle:hover {
+    background: var(--yellow);
+    color: #333;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.audio-toggle i {
+    padding: 0 0.5rem;
+    font-size: 1.8rem;
+}
+
 .heading{
     text-align: center;
     margin:0 6rem;
@@ -240,7 +269,7 @@ header .navbar ul li a:hover{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .home .user{
