@@ -35,7 +35,7 @@ html::-webkit-scrollbar-thumb{
     background:var(--yellow);
 }
 body{
-    background: linear-gradient(180deg, #FF9933 0%, #fc9696 33%, #138808 66%, #111 100%);
+    background: linear-gradient(180deg, #514f78 0%, #261f1f 33%, #34342e 66%, #57917d 100%);
     background-attachment: fixed;
     overflow-x: hidden;
     padding-left: 35rem;
@@ -90,6 +90,7 @@ section{
 }
 
 .heading{
+    
     text-align: center;
     margin:0 6rem;
     font-size: 4rem;
