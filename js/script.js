@@ -34,29 +34,5 @@ $(document).ready(function(){
       );
   
     });
-
-    // Profile audio play/pause button
-    const audio = document.getElementById('profile-audio');
-    const audioToggle = document.getElementById('audio-toggle');
-    if (audio && audioToggle) {
-      const setLabel = () => {
-        audioToggle.textContent = audio.paused ? 'Play Music' : 'Pause Music';
-      };
-
-      audioToggle.addEventListener('click', () => {
-        if (audio.paused) {
-          audio.play().catch(() => {
-            // Autoplay may be blocked; user can click again after interacting.
-          });
-        } else {
-          audio.pause();
-        }
-        setLabel();
-      });
-
-      audio.addEventListener('play', setLabel);
-      audio.addEventListener('pause', setLabel);
-      setLabel();
-    }
   
   });
